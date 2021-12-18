@@ -11,7 +11,9 @@
 
 ## 📝 Descrição
 
-O projeto consiste em buscar informações de livros, a partir de uma chave de busca como entrada, e listá-los. Ao clicar no botão de pesquisar a aplicação mostrará o resultado dos livros relacionados enviados por uma [API](https://hn.algolia.com/api/v1/search?query=) que está sendo consumida. Este trabalho foi produzido com o intuito de praticar os conhecimentos a cerca da linguagem **TypeScript** junto ao framework CSS **Material UI**.
+O projeto consiste em buscar informações de livros, a partir de uma chave de busca como entrada, e listá-los. Ao clicar no botão de pesquisar a aplicação mostrará o resultado dos livros relacionados enviados por uma [API](https://hn.algolia.com/api/v1/search?query=) que está sendo consumida. 
+
+Este trabalho foi produzido com o intuito de praticar os conhecimentos a cerca da linguagem **TypeScript** junto ao framework CSS **Material UI**.
 
 ## 🎨 Layout
 
