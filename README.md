@@ -11,12 +11,12 @@
 
 ## 📝 Descrição
 
-O projeto é bem simples, ele recebe dois números inteiros como entrada e retorna o resultado da soma entre esses dois números. Produzido com o intuito de praticar os conhecimentos a cerca da linguagem **TypeScript** junto ao framework CSS **Material UI**.
+O projeto consiste em buscar informações de livros de uma API, a partir de uma chave de busca como entrada. Ao clicar no buttão de pesquisar ele mostrar o resultado dos livros relacionados enviados pela API. Este trabalho foi produzido com o intuito de praticar os conhecimentos a cerca da linguagem **TypeScript** junto ao framework CSS **Material UI**.
 
 ## 🎨 Layout
 
 <p align="center">
-    <img src=".public/images/banner.png" height="100%" width="85%" alt="Banner Sign In do Google" />
+    <img src=".github/banner.png" height="100%" width="85%" alt="Banner Aplicação Biblioteca" />
 </p>
 
 ## 🚀 Tecnologias
@@ -26,6 +26,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - **[TypeScript](https://www.typescriptlang.org/)**
 - **[React.js](https://reactjs.org/)**
 - **[Material UI](https://ejs.co/)**
+- **[Axios](https://axios-http.com/)**
 
 > Veja o arquivo [package.json](package.json)
 
