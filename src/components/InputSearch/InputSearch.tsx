@@ -1,3 +1,5 @@
+import { useStyles } from "./InputSearch.style";
+
 type InputSearchProps = {
   id: string;
   children: string;
@@ -5,16 +7,16 @@ type InputSearchProps = {
 };
 
 const InputSearch = (props: InputSearchProps) => {
+  const styles = useStyles();
+
   return (
-    <>
-      <label>{props.children}</label>
-      <input 
-        id={props.id} 
-        type="text" 
-        onChange={props.onInputChange} 
-        className="input" 
-      />
-    </>
+    <input
+      className={styles.input}
+      id={props.id}
+      placeholder={props.children}
+      type="text"
+      onChange={props.onInputChange}
+    />
   );
 };
 

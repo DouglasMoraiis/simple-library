@@ -1,3 +1,5 @@
+import { useStyles } from './List.style'
+
 export interface IBook extends Object {
   id: number;
   author: string;
@@ -6,27 +8,32 @@ export interface IBook extends Object {
 }
 
 type ListProps = {
-  list: Array<IBook>;
+  list?: Array<IBook>;
 };
 
 export const List = (props: ListProps) => {
+  const styles = useStyles()
+
   return (
-    <div>
+    <div className={styles.listContainer}>
       {props.list?.map((item) => {
         return (
-          <div key={item.id}>
-            <p>
+          <div key={item.id} className={styles.book}>
+            <div className={styles.bookAtributes}>
               <span>✏️</span>
-              {item.author}
-            </p>
-            <p>
+              <span><b>Autor</b></span>
+              <span className={styles.content}>{item.author}</span>
+            </div>
+            <div className={styles.bookAtributes}>
               <span>📘</span>
-              {item.title}
-            </p>
-            <a href={item.url}>
+              <span><b>Título</b></span>
+              <span className={styles.content}>{item.title}</span>
+            </div>
+            <div className={styles.bookAtributes}>
               <span>🔎</span>
-              {item.url}
-            </a>
+              <span><b>URL</b></span>
+              <a className={styles.content} href={item.url} >{item.url}</a>
+            </div>
           </div>
         );
       })}
